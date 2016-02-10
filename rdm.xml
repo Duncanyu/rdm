@@ -1,1 +1,73 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="31" inline="false" x="17" y="5">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="15">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="robot_delay" id="40" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="38">
+            <field name="NUM">250</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_leftmotor" id="65" inline="true">
+            <value name="MOVLEFT">
+              <block type="math_arithmetic" id="72" inline="true">
+                <field name="OP">ADD</field>
+                <value name="A">
+                  <block type="math_arithmetic" id="73" inline="true">
+                    <field name="OP">MINUS</field>
+                    <value name="A">
+                      <block type="math_random" id="80"></block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="81">
+                        <field name="NUM">50</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="82">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="movement_rightmotor" id="98" inline="true">
+                <value name="MOVRIGHT">
+                  <block type="math_arithmetic" id="84" inline="true">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <block type="math_arithmetic" id="85" inline="true">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <block type="math_random" id="86"></block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="87">
+                            <field name="NUM">50</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="88">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
