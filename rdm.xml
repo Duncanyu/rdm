@@ -17,7 +17,7 @@
           <block type="movement_leftmotor" id="65" inline="true">
             <value name="MOVLEFT">
               <block type="math_arithmetic" id="72" inline="true">
-                <field name="OP">ADD</field>
+                <field name="OP">MULTIPLY</field>
                 <value name="A">
                   <block type="math_arithmetic" id="73" inline="true">
                     <field name="OP">MINUS</field>
@@ -42,7 +42,7 @@
               <block type="movement_rightmotor" id="98" inline="true">
                 <value name="MOVRIGHT">
                   <block type="math_arithmetic" id="84" inline="true">
-                    <field name="OP">ADD</field>
+                    <field name="OP">MINUS</field>
                     <value name="A">
                       <block type="math_arithmetic" id="85" inline="true">
                         <field name="OP">MINUS</field>
